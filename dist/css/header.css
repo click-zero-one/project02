@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri;
+  transition: background 1s; }
+
+header {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden; }
+
+.containerTopMenu {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: flex-end; }
+
+.topMenu {
+  width: 700px;
+  display: flex;
+  justify-content: flex-end; }
+
+.itemBase, .itemEnd {
+  width: 119px;
+  height: 100%;
+  font-size: 160%;
+  text-align: center;
+  line-height: 235%;
+  transition: none; }
+  .itemBase a, .itemEnd a {
+    text-decoration: none;
+    color: black; }
+
+.itemEnd {
+  margin-right: 5%; }
+
+.containerContentHeader {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column; }
+
+.containerMotion {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column; }
+
+.containerSunAndMoon {
+  width: 100%;
+  height: 45%;
+  display: flex; }
+
+.setShapeBase, .sun, .moon {
+  border-radius: 200%;
+  width: 22%;
+  position: relative;
+  cursor: pointer; }
+
+.sun {
+  background: url(../../assets/img/sun.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 165%;
+  margin-left: 7%; }
+
+.sunMove {
+  animation: sunMove .7s 1 forwards; }
+  @keyframes sunMove {
+  0% {
+    top: 0%; }
+  100% {
+    top: -273%; } }
+
+.moon {
+  background: url(../../assets/img/moon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 165%;
+  right: 22%;
+  top: -273%; }
+
+.moonMove {
+  animation: moonMove .7s 1 forwards; }
+  @keyframes moonMove {
+  0% {
+    top: -273%; }
+  100% {
+    top: 0%; } }
+
+.containerCity {
+  background: url(../../assets/img/city_in_the_day.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 65%;
+  transition: all 1.5s; }
+
+.containerText {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.containerBigLogo {
+  width: 55%;
+  height: 250px;
+  position: absolute;
+  bottom: 50.5%;
+  left: 45%;
+  display: flex;
+  flex-direction: column; }
+
+.bigLogo {
+  width: 100%;
+  height: 75%;
+  font-size: 16rem;
+  line-height: 70%;
+  text-align: center; }
+
+.textLogo {
+  width: 92%;
+  height: 17%;
+  display: flex;
+  justify-content: flex-end; }
+
+.text {
+  width: auto;
+  height: 100%;
+  font-size: 2rem; }
+
+.textContent {
+  width: 97%;
+  height: 80%;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+/*# sourceMappingURL=header.css.map */
